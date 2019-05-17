@@ -1,0 +1,30 @@
+<import src="../hTemp/hTemp" />
+<view>
+  <view class='itemActive' 
+    wx:for="{{activeList}}" 
+    bindtap='toActive'
+    data-index="{{index}}">
+    <view class='left' style='background-image:url({{item.img}})'>
+      <view>{{item.time}}</view>
+      <view>分钟</view>
+    </view>
+    <view class='right'>
+      <view>
+        <view class='title'>{{item.title}}</view>
+        <view class='class'>{{item.classOne}}</view>
+      </view>
+      <view class='ischoose' hidden='{{item.isChoose}}'>
+        <image src='{{trueImg}}' mode='widthFix'></image>
+        <view>已选</view>
+      </view>
+    </view>
+  </view>
+  <view class="moreActive" bindtap='getmore' >更多训练</view>
+  <modal noCancel noConfirm class="modal" confirmText="" hidden="{{modalPrompt}}">
+    <image bindtap="closeModal" class="modal-close" src="../../img/modal-close.png"></image>
+    <view class="modal-content" style="font-size:36rpx;">下载NTC，即可获得更多</view>
+    <view class="modal-content" style="font-size:36rpx;">专业训练指导</view>
+    <button class="modal-btn">立即下载</button>
+  </modal>
+  <template is="nav" data="{{list}}" />
+</view>

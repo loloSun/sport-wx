@@ -1,0 +1,12 @@
+<!--pages/home/home.wxml-->
+<view class='h_content'>
+  <view class='h_fenlei' wx:for="{{list}}" style='background-image:url({{item.bgimg}})'>
+    <view class='h_f_item' bindtap="toDetail" data-id='{{index}}'>
+      <view class='h_f_name'>{{item.name}}</view>
+      <view class='h_f_info'>{{item.info}}</view>
+      <image class='h_f_go' 
+        src='{{item.right}}' 
+        mode='widthFix'></image>
+    </view>
+  </view>
+</view>

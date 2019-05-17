@@ -1,0 +1,27 @@
+<view>
+  <view class='top'>
+    <view class='title'>-今日训练-</view>
+    <view class='power'>耐力</view>
+    <view class='power'>健身入门基准跑</view>
+    <view class='time'>15分钟</view>
+  </view>
+  <view class='middle'>
+    <view class='prograss'>
+      <text class='nowpro'>0/</text>14
+    </view>
+    <view class='miItem'>本周计划</view>
+    <view class='miItem'>完整计划</view>
+    <view class='miItem'>分享给好友</view>
+  </view>
+  <view class='bottom' bindtap='overPlan'>结束计划</view>
+  <view class='tipbox' hidden='{{isOver}}'>
+    <view class='tip'>
+      <view>
+        <view>一旦结束计划，之前的</view>
+        <view>努力都白费咯，确定要结束吗？</view>
+      </view>
+      <view class='choose' bindtap='noOver'>不，我再坚持一下</view>
+      <view class='choose' bindtap='trueOver'>是，立刻结束计划</view>
+    </view>
+  </view>
+</view>

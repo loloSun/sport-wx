@@ -1,0 +1,10 @@
+<view class='xiazai'>
+  <swiper indicator-dots circular>
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image class='xiazaiimg' src="{{item}}" mode='widthFix' />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='xiazaibtn'>下载</view>
+</view>

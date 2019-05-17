@@ -1,0 +1,40 @@
+<view>
+  <view class='header'>
+    <image class='userImg' src='{{userImg}}' mode='widthFix'> </image>
+    <view class='right'>
+      <view class='userName'>{{userName}}</view>
+      <view class='info'>
+        <view class='infoItem'>我已完成的训练：{{num}}个</view>
+        <view class='infoItem lianxi'>联系我们</view>
+      </view>
+    </view>
+  </view>
+  <view class='conTitle'>进行中的训练</view>
+  <view class='planCon'>
+    <view class='planItem' 
+      wx:for="{{planList}}"
+      >
+        <view wx:if="{{item.title=='入门计划'}}"
+          bindtap="toRuPlan"
+          class='planItem' 
+          style='background-image:url({{item.bgimg}})'
+          >
+          <view class="pTime"></view>
+          <view class='pTitle'>{{item.title}}</view>
+          <view class='pDate'>今日：训练日</view>
+          <view class='isOver'>-未完成-</view>
+        </view>
+        <view wx:else 
+          class='planItem' 
+          style='background-image:url({{item.topimg}})'
+          bindtap='toDuan'
+          data-index="{{index}}"
+          >
+          <view class="pTime">短时训练</view>
+          <view class='pTitle'>{{item.title}}</view>
+          <view class='pDate'>今日训练</view>
+          <view class='isOver'>-未完成-</view>
+        </view>
+      </view>
+  </view>
+</view>

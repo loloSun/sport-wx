@@ -1,0 +1,14 @@
+<view class="all">
+  <swiper indicator-dots indicatorActiveColor="#fff" indicatorColor="#333" circular>
+    <swiper-item wx:for="{{imgs}}">
+        <view class='items'>
+          <image class='slideImage' src="{{item.url}}" mode='widthFix' />
+          <view class="summary">
+            <view class="title">{{item.title}}</view>
+            <view class="content">{{item.content}}</view>
+        </view>
+        </view>
+      </swiper-item>
+  </swiper>
+  <button class='go' bindgetuserinfo='getUser' open-type='getUserInfo'>立即进入</button>
+</view>

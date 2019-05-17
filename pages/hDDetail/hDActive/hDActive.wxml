@@ -1,0 +1,49 @@
+<view>
+  <view class='top' style='background-image:url({{items.topimg}})'>
+    <view class='title'>{{items.title}}</view>
+    <view class='tInfo'>
+      <view class='tIitem'>
+        <view class='tIIInfo'>{{items.time}}</view>
+        <view class='tIIclass'>分钟</view>
+      </view>
+      <view class='tIitem'>
+        <view class='tIIInfo'>{{items.evel}}</view>
+        <view class='tIIclass'>强度</view>
+      </view>
+      <view class='tIitem'>
+        <view class='tIIInfo'>{{items.power}}</view>
+        <view class='tIIclass'>水平</view>
+      </view>
+    </view>
+    <view class='tStart'>开始</view>
+  </view>
+  <view class='middle'>
+    <view class="back_title">适合人群</view>
+    <view class='back_content'>{{items.people}}</view>
+  </view>
+  <view class='bottom'>
+    <view class='workout' style='background-image:url({{items.midimg}})'>
+      {{items.info}}
+    </view>
+    <view class='back_white'>
+      <view>训练创建者</view>
+      <view class="back_white_author">{{items.setman}}</view>
+    </view>
+  </view>
+  <view class='position_bottom' hidden='{{fromMine}}'>
+    <view class='poItem addItem' 
+      bindtap='addItem'>
+      {{index==nowIndex?"查看我的训练":"添加此训练"}}  
+    </view>
+    <view class='poItem'>立即开始</view>
+  </view>
+  <view class='position_bottom' hidden='{{!fromMine}}'>
+    <button open-type='share' class='poItem addItem'>分享给好友</button>
+    <view class='poItem' bindtap='sureRemove'>删除训练</view>
+  </view>
+  <modal noCancel noConfirm class="modal" confirmText="" hidden="{{modalPrompt}}">
+    <view class="modal_tip">你确定要删除这个训练吗 ?</view>
+    <view class="modal_tab" bindtap='noRemove'>不，手滑</view>
+    <view class="modal_tab" bindtap='removePlan'>是，删除</view>
+  </modal>
+</view>

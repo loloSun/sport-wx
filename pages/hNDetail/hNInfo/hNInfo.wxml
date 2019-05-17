@@ -1,0 +1,32 @@
+<view class='conti'>
+  <!-- <view class='top'> -->
+  <view class='top' style='background-image:url({{trainItem.bgimg}})'>
+    <view class='people'>
+      <image src='{{trainItem.img}}' mode='widthFix'></image>
+      <view>{{trainItem.name}}</view>
+    </view> 
+  </view>
+  <view class='items'>
+    <view class='title'>教练简介</view>
+    <view class='content'>
+      <view>{{trainItem.easeInfo}}</view>
+      <view>{{trainItem.moreInfo}}</view>
+    </view>
+  </view>
+  <view class='items'>
+    <view class='title'>健身理念</view>
+    <view class='content'>{{trainItem.linian}}</view>
+  </view>
+  <view class='items'>
+    <view class='title'>训练概览</view>
+    <view class='content'>
+      <view class='gailan' wx:for="{{trainItem.gailan}}" wx:key="{{index}}">
+        <image src='{{item.img}}' mode='widthFix'></image>
+        <view>
+          <view class='gailanName'>{{item.title}}</view>
+          <view class='time'>{{item.time}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

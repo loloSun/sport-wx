@@ -1,0 +1,24 @@
+<import src="../hTemp/hTemp" />
+<template is="nav" data="{{list}}" />
+<view>
+  <modal noCancel noConfirm class="modal" confirmText="" hidden="{{modalPrompt}}">
+    <view class="modal_tip">训练说明</view>
+    <view class="modal_con"> 这是一个由Nike专业教练组成的私教训练专区，你可以根据自己的训练偏重，选择一位合适的教练开启私人专业训练。 想要查看更多训练内容及专业指导，点击教练头像即可。 </view>
+    <view class="modal_btn" bindtap='know'>知道了</view>
+  </modal>
+  <view class='tranbox'>
+    <view 
+      class='tranItem'
+      wx:for="{{trainInfo}}"
+      wx:key="{{index}}"
+      bindtap='toDetail'
+      data-index="{{index}}"
+      >
+      <image src='{{item.img}}' mode='widthFix'></image>
+      <view class='content'>
+        <view class='name'>{{item.name}}</view>
+        <view class='info'>{{item.easeInfo}}</view>
+      </view>
+    </view>
+  </view>
+</view>

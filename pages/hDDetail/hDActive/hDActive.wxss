@@ -1,0 +1,136 @@
+.top{
+  width: 100%;
+  height: 495rpx;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color:#fff;
+  background-size: 100% 100%;
+}
+.title{
+  height:145rpx;
+  line-height:145rpx;
+  font-weight:600;
+  font-size:50rpx;
+}
+.tInfo{
+  width: 100%;
+  display: flex;
+  margin: 30rpx 0;
+}
+.tIitem{
+  width:calc(1/3*100%);
+  height:100rpx;
+  text-align:center;
+  border-left: 1rpx solid #fff;
+}
+.tIitem:nth-child(1){
+  border-left: 0;
+}
+.tIIInfo{
+  height:50rpx;
+  line-height:50rpx;
+  font-weight:600;
+  font-size:44rpx;
+}
+.tStart{
+  height:146rpx;
+  line-height:146rpx;
+  background-color:#d5ff45;
+  width:146rpx;
+  border-radius:73rpx;
+  text-align:center;
+  font-weight:bold;
+  color:#333;
+}
+
+.middle{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color:#000;
+}
+.back_title{
+  font-size:50rpx;
+  font-weight:600;
+  height:100rpx;
+  line-height:100rpx;
+}
+.back_content{
+  min-height:80rpx;
+  margin-bottom:10rpx;
+  text-align: center;
+}
+
+.bottom{
+  text-align: center;
+}
+.workout{
+  width: 100%;
+  height: 500rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 100% 100%;
+  color: #fff;
+  font-size: 35rpx;
+  padding: 0 70rpx;
+  box-sizing: border-box;
+}
+.back_white{
+  width: 100%;
+  height: 190rpx;
+  padding: 30rpx 70rpx;
+  box-sizing: border-box;
+  font-size: 33rpx;
+  margin-bottom: 100rpx;
+}
+.back_white_author{
+  font-weight: bold;
+  font-size: 40rpx;
+  margin-top: 20rpx;
+}
+.position_bottom{
+  width: 100%;
+  height: 100rpx;
+  background: #000;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.poItem{
+  width: 50%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #000;
+  color: #fff;
+}
+.addItem{
+  border-right: 1rpx solid #fff;
+}
+.modal_tip{
+  font-weight: bold;
+  color: #000;
+  font-size: 40rpx;
+  text-align: center;
+  margin-bottom: 50rpx;
+}
+.modal_tab{
+  width: 85%;
+  height: 60rpx;
+  line-height: 60rpx;
+  background: #000;
+  color: #fff;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+  margin: 18rpx auto;
+  text-align: center;
+}

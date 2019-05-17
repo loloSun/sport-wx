@@ -1,0 +1,121 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"checkInvalidKey": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.5.2",
+	"appid": "wx485e306388f537c9",
+	"projectname": "Nike",
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 10,
+			"list": [
+				{
+					"id": -1,
+					"name": "i",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "h",
+					"pathName": "pages/home/home",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "l",
+					"pathName": "pages/logs/logs",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "hr",
+					"pathName": "pages/hRDetail/hRDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "hd",
+					"pathName": "pages/hDDetail/hDDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "hrp",
+					"pathName": "pages/hRDetail/hRPlan/hRPlan",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "hda",
+					"pathName": "pages/hDDetail/hDActive/hDActive",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "quan",
+					"pathName": "pages/quan/quan",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "lr",
+					"pathName": "pages/logs/lRumen/lRumen",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "hn",
+					"pathName": "pages/hNDetail/hNDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "hni",
+					"pathName": "pages/hNDetail/hNInfo/hNInfo",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/enter/enter",
+    "pages/hNDetail/hNInfo/hNInfo",
+    "pages/home/home",
+    "pages/download/download",
+    "pages/logs/logs",
+    "pages/logs/lRumen/lRumen",
+    "pages/hRDetail/hRDetail",
+    "pages/hRDetail/hRPlan/hRPlan",
+    "pages/hDDetail/hDDetail",
+    "pages/hDDetail/hDActive/hDActive",
+    "pages/hNDetail/hNDetail",
+    "pages/hTemp/hTemp"
+  ],
+  "window": {
+    "navigationBarBackgroundColor":"#333",
+    "navigationBarTextStyle":"white",
+    "navigationBarTitleText":"Nike健身体验房"
+  },
+  "tabBar": {
+    "selectedColor":"#333",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "./img/home.png",
+        "selectedIconPath": "./img/_home.png"
+      },
+      {
+        "pagePath": "pages/download/download",
+        "text": "下载",
+        "iconPath": "./img/nikerun.png",
+        "selectedIconPath": "./img/_nikerun.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "我的",
+        "iconPath": "./img/mine.png",
+        "selectedIconPath": "./img/_mine.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

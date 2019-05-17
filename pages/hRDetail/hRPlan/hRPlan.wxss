@@ -1,0 +1,104 @@
+.plan{
+  width: 100%;
+}
+.planTitle{
+  width: 65%;
+  margin: 0 auto;
+  color: #999;
+  text-align: center;
+  font-size: 28rpx;
+  margin-top: 90rpx;
+  margin-bottom: 60rpx; 
+}
+.planCon{
+  width: 100%;
+}
+.planItem{
+  width: 100%;
+  border-bottom: 1rpx solid #999;
+}
+.itemTit{
+  width: 100%;
+  padding: 0 40rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30rpx 0;
+}
+.planItem:nth-last-child(1){
+  border: 0;
+}
+.xuhao{
+  width: 50rpx;
+  margin: 0 50rpx 0 10rpx;
+}
+.itemTitLeft{
+  display: flex;
+}
+.up{
+  width: 40rpx;
+}
+.itemCon{
+  width: 100%;
+  display: none;
+}
+.itemConTit{
+  font-size: 26rpx;
+  color: #999;
+  margin: 20rpx 0;
+  padding: 0 0 0 150rpx;
+  box-sizing: border-box;
+}
+.itemConItem{
+  width: 100%;
+  border-bottom: 1rpx solid #ccc;
+  line-height: 100rpx;
+  padding: 20rpx 0 0 150rpx;
+  box-sizing: border-box;
+}
+.itemConItem:nth-last-child(1){
+  border: 0;
+}
+.nowItem{
+  display: block;
+}
+.clooseItem{
+  background: #000;
+  color: #fff;
+}
+.tip{
+  color: #999;
+  padding: 20rpx 0 0 150rpx;
+  box-sizing: border-box;
+  font-size: 26rpx;
+}
+.sure{
+  width: 200rpx;
+  height: 60rpx;
+  background: #000;
+  color: #fff;
+  font-size: 30rpx;
+  border-radius: 10rpx;
+  margin: 20rpx 0 0 150rpx;
+  text-align: center;
+  line-height: 60rpx;
+}
+.picker{
+  width: 250rpx;
+  font-size: 30rpx;
+  border-bottom: 1rpx solid #000;
+  margin: 30rpx 0 0 150rpx;
+}
+.goPlan{
+  width: 80%;
+  height: 100rpx;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 100rpx;
+  margin: 0 auto;
+  margin-top: 500rpx;
+  font-size: 30rpx;
+  border-radius: 10rpx;
+}

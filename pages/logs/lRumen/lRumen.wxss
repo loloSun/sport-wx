@@ -1,0 +1,90 @@
+page{
+  text-align: center;
+}
+.top{
+  width: 100%;
+  height: 380rpx;
+  background: url(http://cdn.quncrm.com/ntc/images/fit-introduction.png?v=1.1) no-repeat;
+  background-size: 100%;
+  color: #fff;
+  font-size: 45rpx;
+  overflow: hidden;
+}
+.title{
+  margin-top: 80rpx;
+}
+.power{
+  font-weight: bold;
+}
+.time{
+  width: 110rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  margin: 20rpx auto;
+  font-size: 23rpx;
+  color: #333;
+  background: #fff;
+  border-radius: 5rpx;
+}
+.middle{
+  width: 100%;
+  /* height: 560rpx; */
+  border-bottom: 1rpx solid #ccc;
+  color: #000;
+  padding-bottom: 10rpx;
+}
+.prograss{
+  margin: 70rpx auto;
+}
+.nowpro{
+  font-weight: bold;
+  font-size: 40rpx;
+}
+.miItem{
+  width: 80%;
+  height: 70rpx;
+  line-height: 70rpx;
+  margin: 0 auto;
+  margin-bottom: 65rpx;
+  border: 1px solid #000;
+  border-radius: 8rpx;
+}
+.bottom{
+  width: 60%;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 0 auto;
+  margin-top: 70rpx;
+  border-radius: 8rpx;
+  background: #000;
+  color: #fff;
+}
+.tipbox{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tip{
+  width: 85%;
+  height: 350rpx;
+  padding: 50rpx 100rpx;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 8rpx;
+}
+.choose{
+  color: #fff;
+  background: #000;
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin-top: 30rpx;
+  border-radius: 8rpx;
+  font-size: 27rpx;
+}

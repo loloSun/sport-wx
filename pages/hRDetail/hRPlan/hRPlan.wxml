@@ -1,0 +1,49 @@
+<view class='plan'>
+  <view class='planTitle'>
+    你在此填写的所有信息都能帮助我打造最适合你的个性计划
+  </view>
+  <view class='planCon'>
+    <view class='planItem' wx:for="{{list}}">
+      <view class='itemTit' bindtap='toShow' data-id='{{index}}'>
+        <view class='itemTitLeft'>
+          <image class='xuhao' src='{{item.xhSrc}}' mode='widthFix'></image>
+          <view>{{item.title}}{{item.cloose}}</view>
+        </view>
+        <image class='up' src='{{item.tu}}' mode='widthFix'></image>
+      </view>
+      <view class='itemCon {{index==nowIndex&&isShow?"nowItem":""}}'>
+        <view class='itemConTit'>{{item.info}}</view>
+        <view 
+          wx:if="{{index!=2}}"
+          wx:for="{{item.inner}}" 
+          wx:for-item="it" 
+          wx:for-index="in" 
+          bindtap='cloose'
+          data-id='{{in}}'
+          data-index="{{index}}"
+          class='itemConItem {{in==item.clooseIn?"clooseItem":""}}'>
+          <view>{{it}}</view>
+        </view>
+        <view wx:if="{{index==2}}" data-index="{{index}}">
+          <view class="section">
+            <picker
+              mode="date"
+              value="{{date}}"
+              start="{{year}}-{{month}}-{{day}}"
+              bindchange="bindDateChange"
+            >
+              <view class="picker">
+                {{year}}年{{month}}月{{day}}日
+              </view>
+            </picker>
+          </view>
+          <view class='tip'>{{tip}}</view>
+          <view class='sure' bindtap='clooseDate' data-index="{{index}}">确定</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='goPlan' 
+    hidden='{{!goPlan}}'
+    bindtap='goMine'>制定我的计划</view>
+</view>

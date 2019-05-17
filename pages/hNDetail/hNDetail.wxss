@@ -1,0 +1,48 @@
+@import '../hTemp/hTemp.wxss';
+.modal_tip{
+  color: #000;
+  font-weight: bold;
+  font-size: 40rpx;
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+.modal_con{
+  color: #000;
+  text-align: center;
+}
+.modal_btn{
+  width: 300rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin: 20rpx auto;
+  color: #fff;
+  text-align: center;
+  background: #000;
+  border-radius: 8rpx;
+}
+.tranbox{
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 120rpx;
+}
+.tranItem{
+  width: 100%;
+  height: 270rpx;
+  border-bottom: 1rpx solid #eee;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  color: #666;
+}
+.tranItem image{
+  width:200rpx;
+  height:200rpx;
+}
+.content{
+  width: 420rpx;
+  margin-left: 20rpx;
+}
+.name{
+  color: #000;
+  font-weight: bold;
+}

@@ -1,0 +1,8 @@
+<template name="nav">
+  <view class='nav'>
+    <view class='item' wx:for="{{list}}" bindtap='click' data-id='{{index}}'>
+      <image src='{{item.src}}' mode='widthFix'></image>
+      <view>{{item.title}}</view>
+    </view>
+  </view>
+</template>

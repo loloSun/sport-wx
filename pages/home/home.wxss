@@ -1,0 +1,50 @@
+/* pages/home/home.wxss */
+page{
+  height: 100%;
+  overflow: hidden;
+}
+.h_content{
+  height: 100%;
+  /* background: red; */
+  /* padding-top: 130rpx; */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.h_fenlei{
+  width: 100%;
+  height: 33.4%;
+  /* background: #f6f; */
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+.h_f_item{
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.h_f_name{
+  width: 100%;
+  text-align: center;
+  font-size: 48rpx;
+  font-weight: bold;
+  margin: 100rpx 0 30rpx 0;
+}
+.h_f_info{
+  width: 100%;
+  text-align: center;
+  font-size: 33rpx;
+}
+.h_f_go{
+  width: 18rpx;
+  height: 29rpx;
+  position: absolute;
+  top: 50%;
+  right: 40rpx;
+  transform: translate(0,-50%)
+}

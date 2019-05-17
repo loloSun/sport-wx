@@ -1,0 +1,23 @@
+<import src="../hTemp/hTemp" />
+<view class='hrdetail'>
+  <view class='top'>
+    <view class='title'>入门计划</view>
+    <view class='time'>4周</view>
+  </view>
+  <view class='middle'>
+    <view class='mTop'>
+      <view class='mTitle'>训练级别</view>
+      <view class='mInfo'>初级和中级</view>
+    </view>
+    <view class='mbtm'>
+      <view class='mTitle'>适合人群</view>
+      <view class='mInfo'>刚开始训练或只是想保持健康的人群</view>
+    </view>
+  </view>
+  <view class='btom'>
+    <view class='bBtn {{isPlan?"hasPlan":""}}' bindtap='toPlan'>
+      {{isPlan?"你已设置":"设置计划"}}
+    </view>
+  </view>
+  <template is="nav" data="{{list}}" />
+</view>

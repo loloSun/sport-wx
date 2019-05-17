@@ -1,0 +1,58 @@
+.conti{
+  width: 100%;
+}
+.top{
+   width: 100%;
+  height: 300rpx;
+  background-size: 100% 100%;
+  position: relative;
+  margin-bottom: 200rpx;
+}
+.people{
+  width: 162rpx;
+  position: absolute;
+  left: 50%;
+  top: 220rpx;
+  transform: translate(-50%,0);
+  text-align: center;
+
+}
+.people image{
+   width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  border: 1rpx solid #fff;
+
+} 
+.people>view{
+  text-align: center;
+  font-weight: bold;font-size: 32rpx;
+  line-height: 70rpx;
+}
+.items{
+  padding:0 40rpx;
+  box-sizing: border-box;
+}
+.items .title{
+  font-size: 32rpx;
+  line-height: 80rpx;
+  font-weight: bold;
+}
+.items .content{
+  color:#555;
+}
+.gailan{
+  height: 209rpx;
+  display: flex;
+  align-items: center;
+  border-top: 1rpx solid #eee;
+}
+.gailan image{
+  width: 169rpx;
+  height: 169rpx;
+  margin-right: 20rpx;
+}
+.gailanName{
+  color: #000;
+  font-weight: bold;
+}
